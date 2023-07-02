@@ -23,9 +23,9 @@ import java.util.List;
 @RequestMapping("/user-service")
 public class UserController {
 
-    private Environment env;
+    private final Environment env;
 
-    private UserService userService;
+    private final UserService userService;
 
     public UserController(Environment env, UserService userService) {
         this.env = env;
