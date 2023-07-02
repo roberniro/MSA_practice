@@ -31,6 +31,12 @@ logging:
   level:
     com.example.userservice: DEBUG
 
-jwt:
-  expiration_time: 864000000
-  secret: user_token
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
+
+#jwt:
+#  expiration_time: 864000000
+#  secret: user_token
