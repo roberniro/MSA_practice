@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: catalog-service
+    name: order-service
   h2:
     console:
       enabled: true
@@ -16,11 +16,11 @@ spring:
     username: sa
   jpa:
     hibernate:
-      ddl-auto: create-drop
-    show-sql: true
-    generate-ddl: true
-    database: h2
-    defer-datasource-initialization: true
+      ddl-auto: update
+#    show-sql: true
+#    generate-ddl: true
+#    database: h2
+#    defer-datasource-initialization: true
 
 eureka:
   instance:
@@ -36,4 +36,4 @@ greeting:
 
 logging:
   level:
-    com.example.catalogservice: DEBUG
+    com.example.orderservice: DEBUG
