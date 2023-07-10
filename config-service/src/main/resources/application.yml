@@ -8,4 +8,4 @@ spring:
     config:
       server:
         git:
-          uri: C:\Users\denir\Documents\Spring\MSA_config
+          uri: https://github.com/roberniro/MSA_config.git
